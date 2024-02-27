@@ -19,7 +19,7 @@ The server returns a 400 code if an error is encountered. Information about the 
 1. error, contains a brief description of the error encountered by the server program.
 
 An example https request with no arguments on a local server would be:
-https://127.0.0.1:8080/get_windsaloft
+http://127.0.0.1:8080/get_windsaloft
 
 And an example request with arguments would be:
-https://127.0.0.1:8080/get_windsaloft?region=sfo&low_altitude=15000&high_altitude=30000&flight_time=1533&flight_date=2024-02-29
+http://127.0.0.1:8080/get_windsaloft?region=sfo&low_altitude=15000&high_altitude=30000&flight_time=1533&flight_date=2024-02-29
