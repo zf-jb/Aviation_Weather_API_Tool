@@ -9,13 +9,13 @@ The parameters are as follows:
 4. flight_time (requires flight date if used. defaults to the standard 6 hour forecast. Used to select must pertinent forecast information)
 5. flight_date (requires flight time if used. defaults to the standard 6 hour forecast. Used to select must pertinent forecast information)
 
-The server returns a 200 code if executed correctly with the following arguments:
-1. labels, contains the headers for the table. label[0] contains region name, labels[1] + contain the forecast winds
+The server returns a 200 code if executed correctly with a json object with the following arguments:
+1. labels, contains the headers for the table. label[0] is always the region name, labels[1] + contains the altitudes for the forecast winds
 and temperatures.
-2. data, contains a list of rows with each row corresponding to each region. The nth item in each row contains the 
-forecast corresponding to the nth label in the label row.
+2. data, contains a list of rows with each row corresponding to each region. the 1st item in each lsit contains the reigon name and the nth item in each row contains the 
+forecast corresponding to the nth altitude in the label row.
 
-The server returns a 400 code if an error is encountered. Information about the error is provided in the following argument:
+The server returns a 400 code if an error is encountered. Information about the error is provided a json object with the following parameter:
 1. error, contains a brief description of the error encountered by the server program.
 
 An example https request with no arguments on a local server would be:
