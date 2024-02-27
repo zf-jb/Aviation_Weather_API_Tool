@@ -24,4 +24,5 @@ http://127.0.0.1:8080/get_windsaloft
 And an example request with arguments would be:
 http://127.0.0.1:8080/get_windsaloft?region=sfo&low_altitude=15000&high_altitude=30000&flight_time=1533&flight_date=2024-02-29
 
-![image](https://github.com/zf-jb/Aviation_Weather_API_Tool/assets/136113091/4ed3c946-d578-43cb-ad0a-8186090d4e92)
+![Microservice UML](https://github.com/zf-jb/Aviation_Weather_API_Tool/assets/136113091/2c73e8c5-af80-4340-9564-d272a734de56)
+
